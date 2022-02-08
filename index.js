@@ -1,4 +1,4 @@
-import { createApp , ref , computed , onMounted , watch } from 'https://cdnjs.cloudflare.com/ajax/libs/vue/3.0.2/vue.global.js';
+import { createApp , ref , computed , onMounted , watch } from 'https://cdnjs.cloudflare.com/ajax/libs/vue/3.0.9/vue.esm-browser.js';
 
 const STORAGE_KEY = 'todos-vuejs-3.0';
 const todoStorage = {
@@ -113,6 +113,7 @@ const app = createApp({
       allDone,
 
       // Methods
+      pluralize,
       addTodo,
       delTodo,
       editTodo,
